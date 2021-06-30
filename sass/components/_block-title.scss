@@ -1,0 +1,49 @@
+.block-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 768px){
+        margin-bottom: 2.5rem;
+    }
+    @media (min-width: 1200px){
+        margin-bottom: 3.5rem;
+    }
+    @media (min-width: 1600px){
+        margin-bottom: 4.575rem;
+    }
+
+    &__inner {
+        display: inline-block;
+        padding: 0 .5rem 1.4rem;
+        border-bottom: 2px solid $color-primary;
+        position: relative;
+
+        @media (min-width: 1600px){
+            padding: 0 .5rem 2rem;
+        }
+
+        &:before {
+            content: '';
+            width: 40px;
+            height: 11px;
+            background-color: $color-primary;
+            border-radius: 5px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -6px;
+        }
+    }
+
+    .heading-secondary {
+        margin-bottom: .4rem;
+        @media (min-width: 1600px){
+            margin-bottom: .8rem;
+        }
+    }
+
+    .heading-sub {
+        text-transform: capitalize;
+        letter-spacing: 4px;
+    }
+}

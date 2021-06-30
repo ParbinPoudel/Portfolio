@@ -1,0 +1,83 @@
+.card-pricing {
+    background: $dark-blue;
+    text-align: center;
+
+    @include media-breakpoint-down(xl){
+        margin-bottom: 1.875rem;
+    }
+    @include media-breakpoint-down(md){
+        max-width: 400px;
+        margin: 0 auto 1rem;
+    }
+
+    &__head {
+        padding: 1rem 1rem .5rem;
+        color: $white;
+
+        @include media-breakpoint-up(xxl){
+            padding: 1.25rem 1rem 0.8125rem;
+        }
+        h3 {
+            @include font-size(1.5rem);
+            font-weight: 600;
+            margin-bottom: 0;
+
+            @include media-breakpoint-up(xl){
+                @include font-size(1.875rem);
+            }
+            @include media-breakpoint-up(xxl){
+                @include font-size(2.25rem);
+            }
+        }
+        h4 {
+            @include font-size(1.125rem);
+            font-weight: 600;
+            margin-bottom: .4rem;
+            @include media-breakpoint-up(xl){
+                @include font-size(1.3125rem);
+            }
+            @include media-breakpoint-up(xxl){
+                @include font-size(1.5rem);
+            }
+        }
+    }
+    &__body{
+        padding: 2rem 1rem;
+
+        @include media-breakpoint-up(xxl){
+            padding: 2.5rem 1rem 2.8rem;
+        }
+    }
+    .btn-wrap{
+        @include media-breakpoint-down(xl){
+            padding-top: .5rem;
+        }
+    }
+}
+
+.card-pricing-1 {
+    .card-pricing__head {
+        background: $color-secondary-100;
+    }
+    .btn-secondary{
+        box-shadow: 0px 16px 28px rgba($color-secondary, 0.24);
+    }
+}
+
+.card-pricing-2 {
+    .card-pricing__head {
+        background: $purple-200;
+    }
+    .btn-purple{
+        box-shadow: 0px 16px 28px rgba($purple-200, 0.24);
+    }
+}
+
+.card-pricing-3 {
+    .card-pricing__head {
+        background: $pink-100;
+    }
+    .btn-pink{
+        box-shadow: 0px 16px 28px rgba($pink-100, 0.24);
+    }
+}

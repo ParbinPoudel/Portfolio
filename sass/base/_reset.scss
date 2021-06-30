@@ -1,0 +1,82 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-poppins;
+    margin: 0;
+    color: $body-color;
+    background: $body-bg;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 1rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+figure,
+blockquote,ul,ol {
+    margin: 0 0 1rem;
+}
+.site {
+	&-wrapper {
+		margin: 0 auto;
+		@extend .d-flex;
+		min-height: 100%;
+		min-width: 320px;
+		position: relative;
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	&-content {
+		flex-grow: 1;
+
+		@media screen and (min-width:0\0) {
+			flex-grow: 0;
+		}
+	}
+
+	&-header,
+	&-content,
+	&-footer {
+		flex-shrink: 0;
+	}
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+picture {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
