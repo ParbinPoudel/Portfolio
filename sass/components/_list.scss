@@ -1,0 +1,75 @@
+.list-dot {
+    .list-heading {
+        font-size: 1.125rem;
+
+        @media (max-width: 1199px) {
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+.list-dot ul,
+ul.list-dot {
+    padding-left: 0.75rem;
+    list-style: none;
+
+    @media (max-width: 991px) {
+        display: inline-block;
+        text-align: left;
+        column-count: 2;
+    }
+
+    @media (max-width: 575px) {
+        column-count: 1;
+    }
+
+    li {
+        padding-left: 1.5rem;
+        position: relative;
+        margin-bottom: 0.2rem;
+
+        @media (min-width: 1200px) {
+            padding-left: 2rem;
+            margin-bottom: 0.6875rem;
+        }
+
+        &:before {
+            content: '\e900';
+            font-family: icomoon;
+            font-size: 0.75rem;
+            color: $color-secondary;
+            position: absolute;
+            top: 3px;
+            left: 0;
+
+            @media (min-width: 1200px) {
+                font-size: 0.9375rem;
+                top: 0;
+            }
+        }
+    }
+}
+
+.list-check ul,
+ul.list-check {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 4px;
+
+    li {
+        padding-left: 1.9375rem;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNC4wNTgiIGhlaWdodD0iMTEuNzczIiB2aWV3Qm94PSIwIDAgMTQuMDU4IDExLjc3MyI+DQogIDxwYXRoIGlkPSJJY29uX21hdGVyaWFsLWRvbmUiIGRhdGEtbmFtZT0iSWNvbiBtYXRlcmlhbC1kb25lIiBkPSJNNTU1LjAzNyw2MDI5Ljk0NWwtMy4wMjgtMy4yMzFMNTUxLDYwMjcuNzkxbDQuMDM3LDQuMzA5LDguNjUxLTkuMjMzLTEuMDA5LTEuMDc3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU1MC4zMTUgLTYwMjEuMDU4KSIgZmlsbD0iIzk1YTVjNiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiLz4NCjwvc3ZnPg0K");
+        background-position: 0 5px;
+        background-repeat: no-repeat;
+        margin-bottom: .5rem;
+
+        @include media-breakpoint-up(xl){
+            margin-bottom: 1rem;
+        }
+        @include media-breakpoint-up(xxl){
+            margin-bottom: 1.4375rem;
+        }
+    }
+}

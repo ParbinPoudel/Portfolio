@@ -1,0 +1,52 @@
+.btn{
+    display: inline-block;
+    color: $white;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1;
+    min-width: 160px;
+    padding: 1rem 1rem;
+    border-radius: 100px;
+    border: transparent;
+    text-align: center;
+    transition: .2s all ease-in-out;
+
+    @media (min-width: 768px){
+        padding: 1.2rem 1rem;
+        min-width: 200px;
+    }
+    @media (min-width: 1600px){
+        padding: 1.4rem 1rem;
+    }
+
+    &:hover,&:focus{
+        color: $white;
+        box-shadow: none;
+
+    }
+    &-primary{
+        background: $color-primary;
+        &:hover,&:focus{
+            background: rgba($color-primary, .8);
+        }
+    }
+    &-secondary{
+        background: $color-secondary;
+        &:hover,&:focus{
+            background: rgba($color-secondary, .8);
+        }
+    }
+
+    &-purple{
+        background: $purple-200;
+        &:hover,&:focus{
+            background: rgba($purple-200, .8);
+        }
+    }
+    &-pink{
+        background: $pink-200;
+        &:hover,&:focus{
+            background: rgba($pink-200, .8);
+        }
+    }
+}

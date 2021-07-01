@@ -1,0 +1,50 @@
+$site-font-path: "../fonts";
+$site-image-path: "../images";
+
+// fonts
+$font-poppins: 'Poppins', sans-serif;
+
+// color
+$white: #fff;
+$black: #000;
+
+$dark-gray: #707070;
+
+$light-gray: #BFBEBE;
+
+$color-primary: #0ABEAD;
+$color-primary-100: #60E9FF;
+
+$color-secondary: #F57F17;
+$color-secondary-100: #FF6331;
+
+
+$grayish-blue: #95A5C6;
+
+$dark-blue: #161D26;
+$dark-blue-100: #1F2935;
+
+$green-100: #49AF46;
+
+$blue-100: #13B6FF;
+
+$pink-100: #EC407A;
+$pink-200: #F5276C;
+
+$yellow-100: #FFC50C;
+$yellow-200: #FFBB01;
+
+$purple-100: #8540FF;
+$purple-200: #803AFB;
+$purple-300: #760DFF;
+
+
+// base
+$font-size-base: 1rem;
+$font-weight-base: normal;
+$font-family-base: $font-poppins;
+$line-height-base: 1.5;
+
+$body-color: $grayish-blue;
+$body-bg: $dark-blue;
+

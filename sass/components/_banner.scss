@@ -1,0 +1,118 @@
+.banner {
+    padding: 2rem 0 8rem;
+    background: url('#{$site-image-path}/banner-bg.png') no-repeat;
+    background-size: 800px;
+    background-position: bottom;
+
+    @media (min-width: 768px) {
+        padding: 3rem 0 11rem;
+        background-size: 1100px;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 5rem 0 14rem;
+        background-size: 1400px;
+    }
+
+    @media (min-width: 1600px) {
+        padding: 7.8rem 0 17.275rem;
+        background-size: 2166px;
+    }
+
+    .inner__left {
+        order: 1;
+
+        @media (min-width: 992px) {
+            order: 0;
+        }
+    }
+
+    .inner__right {
+        order: 0;
+
+        @media (min-width: 992px) {
+            order: 1;
+        }
+    }
+
+    &__content {
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+
+        .heading-sub {
+            font-size: 1.3125rem;
+            font-weight: 600;
+            color: $color-primary;
+            margin-bottom: .5rem;
+
+            @media (min-width: 1600px) {
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .heading-primary {
+            margin-bottom: .5rem;
+
+            @media (min-width: 1600px) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        span {
+            color: $color-secondary;
+        }
+    }
+
+    .btn-wrap {
+
+        @media (min-width: 576px) {
+            padding-top: 1.125rem;
+        }
+
+        .btn-primary {
+            margin-right: 1.625rem;
+
+            @media (max-width: 575px) {
+                display: block;
+                width: min-content;
+                margin: 0 auto 1rem;
+            }
+        }
+    }
+
+    &__figure {
+        width: 220px;
+        height: 220px;
+        border: 10px solid $dark-blue-100;
+        border-radius: 50%;
+        margin: 0 auto 1.5rem;
+
+        @media (min-width: 768px) {
+            width: 300px;
+            height: 300px;
+            border: 16px solid $dark-blue-100;
+            margin: 0 auto 2rem;
+        }
+
+        @media (min-width: 992px) {
+            margin: 0 auto;
+        }
+
+        @media (min-width: 1200px) {
+            width: 450px;
+            height: 450px;
+        }
+
+        @media (min-width: 1600px) {
+            width: 570px;
+            height: 570px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+}
